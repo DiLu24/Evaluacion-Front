@@ -11,8 +11,8 @@ import { ListaComponent } from './contactos/lista/lista.component';
 import { EditarComponent } from './contactos/new-contacto/editar.component';
 import { UsersService } from './services/users.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//import { MatInputModule } from '@angular/material/input';
-//import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +28,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
-    //MatInputModule,
-    //MatIconModule
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatIconModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]
